@@ -1,0 +1,342 @@
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+hr{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    color: #000;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1920px;
+    position: relative;
+    gap: 70px;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.menu_wrapper {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1920px;
+    height: 90px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    padding: 20px 0;
+    z-index: 100;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.Top-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    gap: 30px;
+}
+
+.menu-Circle {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.searchbar {
+    width: 430.75px;
+    height: 40px;
+
+}
+
+.searchbar-login-signup2 input {
+    border-radius: 1.5625vw;
+    border-width: 1px;
+    text-indent: 10px;
+    border-color: #9747FF;
+
+}
+
+.login {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+.line-vertical {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.searchbar-login-signup1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    gap: 30px;
+}
+
+.searchbar-login-signup2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 774px;
+    position: relative;
+    gap: 30px;
+    background-color: white;
+}
+
+.toggleswitch-base {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 2%;
+    margin-top: 20px;
+    width: 105.49px;
+    height: 50px;
+}
+
+.profile {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.navbar p {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar p:hover {
+    color: #9747FF;
+    text-decoration-line: underline;
+    font-size: larger;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.toggleslider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: gainsboro;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toggleslider:before {
+    position: absolute;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    inset: 0;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:checked+.toggleslider {
+    background: #9747FF;
+}
+
+.switch input:focus+.toggleslider {
+    box-shadow: 0 0 1px #9747FF;
+}
+
+.switch input:checked+.toggleslider:before {
+    transform: translateX(1.6em);
+}
+
+.switch-text {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 10%;
+    /* Start position over the circle */
+    transform: translateY(-50%);
+    transition: all 0.4s ease;
+    /* Add more styling here as needed (font size, etc.) */
+    color: initial;
+    /* Initial text color */
+}
+
+.switch input:checked~.toggleslider:before {
+    /* Styles when switch is on */
+    transform: translateX(1.6em);
+    /* Moves the circle to the right */
+}
+
+.switch input:checked~.switch-text {
+    left: 57%;
+    /* New position on the other side */
+    color: #9747FF;
+    /* New text color when switch is on */
+    transition: all 0.4s ease;
+}
+
+
+/*이미지 슬라이더*/
+.img-slide-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1920px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-slides {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.img-slide {
+    width: 100%;
+    height: 523px;
+    flex: 0 0 auto;
+}
+
+.img-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.prev {
+    left: 0.5vw;
+    height: 28.6458vw;
+    color: gray;
+    font-size: 1.5vw;
+    background-color: transparent;
+}
+
+.next {
+    right: 0.5vw;
+    height: 28.6458vw;
+    color: gray;
+    font-size: 1.5vw;
+    background-color: transparent;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+    width: 100px;
+    height: 80px;
+    right: 20px;
+    font-weight: bold;
+    bottom: 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #b2ade2 0%, #6536af 100%);
+    box-shadow: 0 20px 30px -6px rgba(86, 77, 95, 0.5);
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+#scrollToTopBtn:hover{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+#scrollToTopBtn:active{
+    opacity: 0.5;
+}
